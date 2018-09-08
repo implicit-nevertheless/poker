@@ -10,10 +10,10 @@ class Card:
     def __repr__(
         self,
     ):
-        return '{}<{} of {}s>'.format(
-            self.__class__.__name__,
-            self.value.name,
-            self.suit.name,
+        return '{class_name}<{card_value} of {suit_name}s>'.format(
+            class_name=self.__class__.__name__,
+            card_value=self.value.name,
+            suit_name=self.suit.name,
         )
 
     def __eq__(
@@ -90,9 +90,10 @@ values = [
     )
     for value, name in enumerate(
         card_names,
-        1,
+        2,
     )
 ]
+
 deck = [
     Card(
         suit,
