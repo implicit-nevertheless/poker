@@ -1,6 +1,4 @@
 # Implicit Poker
-=====
-
 
 SEE:
 
